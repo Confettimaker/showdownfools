@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "PS AFD Sprites",
+    "version": "1.0",
+    "description": "Replaces sprites with April Fool's Day sprites",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+    {
+        "matches": ["https://play.pokemonshowdown.com/*", "https://replay.pokemonshowdown.com/*"],
+        "js": ["scripts/afdsprites.js"]
+    }
+    ],
+    "browser_action": {
+        "default_title": "PS AFD Sprites"
+    }
+}
